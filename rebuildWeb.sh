@@ -7,4 +7,4 @@ if [ $PROC ]
 fi
 
 # Changing directory
-cd ~/Desktop/Sagely/sagely && grunt buildWeb && cd .. && ./Servers.sh nec
+cd ~/Desktop/Sagely/sagely && grunt buildWeb && cd .. && ~/Desktop/Sagely/utils/Servers.sh nec
