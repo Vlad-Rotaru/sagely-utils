@@ -14,11 +14,11 @@ fi
 # Kill Sagely
 PROC=$(ps aux | grep "server.js --port 3000" | grep -v grep | awk '{print $2}')
 SAGELY=true
-if [ $PROC ]
+if [ "$PROC" != "" ]
   then
 	if $ALL_SERVICES
 	  then
-		kill $PROC
+		kill -9 $PROC
 		echo "Closed Sagely"
 	else
 		echo "Sagely already started, no need to start it again"
@@ -29,11 +29,11 @@ fi
 # Kill API Gateway server
 PROC=$(ps aux | grep "server.js ../sagel" | grep -v grep | awk '{print $2}')
 SAGELY_API=true
-if [ $PROC ] 
+if [ "$PROC" != "" ]
   then
 	if $ALL_SERVICES
 	  then
-		kill $PROC
+		kill -9 $PROC
 		echo "Closed API Gateway server"
 	else
 		echo "API Gateway server already started, no need to start it again"
@@ -44,11 +44,11 @@ fi
 # Kill Fake SNS
 PROC=$(ps aux | grep "fake_sns --port 9666 --region us-west-2" | grep -v grep | awk '{print $2}')
 SAGELY_SNS=true
-if [ $PROC ]
+if [ "$PROC" != "" ]
   then
 	if $ALL_SERVICES
 	  then
-		kill $PROC
+		kill -9 $PROC
 		echo "Closed Fake SNS"
 	else
 		echo "Fake SNS already started, no need to start it again"
@@ -59,11 +59,11 @@ fi
 # Kill Lambda
 PROC=$(ps aux | grep "server.js --port 9777" | grep -v grep | awk '{print $2}')
 SAGELY_LAMBDA=true
-if [ $PROC ]
+if [ "$PROC" != "" ]
   then
 	if $ALL_SERVICES
 	  then
-		kill $PROC
+		kill -9 $PROC
 		echo "Closed Lambda"
 	else
 		echo "Lambda already started, no need to start it again"
@@ -74,11 +74,11 @@ fi
 # Kill Fake S3
 PROC=$(ps aux | grep "fakes3 --root ./ --port 9444" | grep -v grep | awk '{print $2}')
 SAGELY_S3=true
-if [ $PROC ]
+if [ "$PROC" != "" ]
   then
 	if $ALL_SERVICES
 	  then
-		kill $PROC
+		kill -9 $PROC
 		echo "Closed Fake S3"
 	else
 		echo "Fake S3 already started, no need to start it again"
@@ -89,11 +89,11 @@ fi
 # Kill DynamoDB
 PROC=$(ps aux | grep "java -D:java.library.path=./DynamoDBLocal_lib/ -jar DynamoDBLocal.jar" | grep -v grep | awk '{print $2}')
 SAGELY_DYNAMO=true
-if [ $PROC ]
+if [ "$PROC" != "" ]
   then
 	if $ALL_SERVICES
 	  then
-		kill $PROC
+		kill -9 $PROC
 		echo "Closed DynamoDB"
 	else
 		echo "DynamoDB already started, no need to start it again"
@@ -104,11 +104,11 @@ fi
 # Kill Ses
 PROC=$(ps aux | grep "server.js --port 9555" | grep -v grep | awk '{print $2}')
 SAGELY_SES=true
-if [ $PROC ]
+if [ "$PROC" != "" ]
   then
 	if $ALL_SERVICES
 	  then
-		kill $PROC
+		kill -9 $PROC
 		echo "Closed Ses"
 	else
 		echo "Ses already started, no need to start it again"
@@ -119,11 +119,11 @@ fi
 # Kill Redis server
 PROC=$(ps aux | grep "redis-server" | grep -v grep | awk '{print $2}')
 SAGELY_REDIS=true
-if [ $PROC ]
+if [ "$PROC" != "" ]
   then
 	if $ALL_SERVICES
 	  then
-		kill $PROC
+		kill -9 $PROC
 		echo "Closed Redis server"
 	else
 		echo "Redis server already started, no need to start it again"
@@ -142,7 +142,6 @@ if [ $1 ]
 fi
 
 sleep 2
-
 
 
 # Start API Gateway server
