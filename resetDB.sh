@@ -46,4 +46,4 @@ fi
 
 sleep 2
 
-./Servers.sh nec
+./utils/Servers.sh nec
