@@ -15,185 +15,798 @@ Then it will run either grunt jasmine_node:accept (most cases) or grunt protract
 
 ## Dependencies
 **sagely/package.json**
-- SagelyCalendarPrint
-- sagely-cli
-- sagely-db
-- sagely-etc
-- SagelyRest
+Dependencies
+```
+N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-audit/package.json**
-- sagely-db
-- sagely-etc
-- sagely-cli
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-audit/src/package.json**
-- sagely-db
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-authentication/package.json**
-- sagely-cli
+Dependencies
+```
+N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-authentication/src/package.json**
+Dependencies
+```
 N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-bounced-email/package.json**
-- sagely-etc
-- SagelyStorage
-- sagely-cli
-- sagely-db
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-bounced-email/src/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-cache/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-calendar-print/package.json**
-- sagely-etc
-- sagely-cli
-- sagely-db
-- SagelyStorage
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-calendar-print/src/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-cli/package.json**
+Dependencies
+```
 N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-client-log/package.json**
+Dependencies
+```
 N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-client-log/src/package.json**
+Dependencies
+```
 N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-db/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-etc/package.json**
+Dependencies
+```
 N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-log/package.json**
-- sagely-cli
+Dependencies
+```
+N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-log/src/package.json**
+Dependencies
+```
 N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-microservices/package.json**
-- sagely-etc
-- Sagely
-- sagely-cli
-- sagely-db
-- SagelyStorage
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-microservices/src/appStore/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-microservices/src/environment/package.json**
+Dependencies
+```
 N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-microservices/src/familyEmail/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-microservices/src/log/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-microservices/src/lookupKey/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-microservices/src/media/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-microservices/src/readToken/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-microservices/src/resend/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-microservices/src/updateFamilyUser/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-microservices/src/validate/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-newsletter/package.json**
-- sagely-etc
-- sagely-cli
-- sagely-db
-- SagelyRest
-- SagelyStorage
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-newsletter/src/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-pubnub/package.json**
-- sagely-db
-- sagely-etc
-- sagely-cli
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-pubnub/src/package.json**
-- sagely-db
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-push-notifications/package.json**
-- sagely-etc
-- sagely-cli
-- sagely-db
-- SagelyStorage
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-push-notifications/src/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-reporting/package.json**
-- sagely-etc
-- sagely-cli
-- sagely-db
-- SagelyRest
-- SagelyStorage
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-reporting/src/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-rest/package.json**
-- sagely-etc
-- sagely-cli
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-rest/src/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-scheduled-emailer/package.json**
-- sagely-etc
-- sagely-cli
-- sagely-db
-- SagelyStorage
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-scheduled-emailer/src/schedule/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-scheduled-emailer/src/send/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-sign-app/package.json**
+Dependencies
+```
 N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-sign-web/package.json**
-- sagely-cli
+Dependencies
+```
+N/A
+```
+
+DEV Dependencies
+```
+- N/A
+```
 
 **sagely-storage/package.json**
-- sagely-cache
-- sagely-db
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-storage/src/package.json**
-- sagely-cache
-- sagely-db
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-sync/package.json**
-- sagely-etc
-- sagely-cli
-- sagely-db
-- SagelyStorage
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
+
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
 **sagely-sync/src/package.json**
-- sagely-etc
+Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
 
+DEV Dependencies
+```
+- Binary
+- file
+- (standard
+- input)
+- matches
+```
