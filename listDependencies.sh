@@ -24,7 +24,7 @@ for item in $FILES; do
 	if [ "${DEV_DEPENDACIES}" ]; then
       echo ${DEV_DEPENDACIES} | sed -e 's/ /\n/g' | sed -e 's/^/- /g'
   else
-	  echo "- N/A"
+	  echo "N/A"
 	fi
 	echo "\`\`\`"
 	echo ""
