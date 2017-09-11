@@ -22,45 +22,35 @@ N/A
 
 DEV Dependencies
 ```
-- N/A
+- SagelyCalendarPrint
+- sagely-cli
+- sagely-db
+- sagely-etc
+- SagelyRest
 ```
 
 **sagely-audit/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-db
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-cli
 ```
 
 **sagely-audit/src/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-db
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-authentication/package.json**
@@ -71,7 +61,7 @@ N/A
 
 DEV Dependencies
 ```
-- N/A
+- sagely-cli
 ```
 
 **sagely-authentication/src/package.json**
@@ -88,96 +78,60 @@ DEV Dependencies
 **sagely-bounced-email/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- SagelyStorage
+- sagely-cli
+- sagely-db
 ```
 
 **sagely-bounced-email/src/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-cache/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-calendar-print/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-cli
+- sagely-db
+- SagelyStorage
 ```
 
 **sagely-calendar-print/src/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-cli/package.json**
@@ -216,20 +170,13 @@ DEV Dependencies
 **sagely-db/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-etc/package.json**
@@ -251,7 +198,7 @@ N/A
 
 DEV Dependencies
 ```
-- N/A
+- sagely-cli
 ```
 
 **sagely-log/src/package.json**
@@ -268,39 +215,26 @@ DEV Dependencies
 **sagely-microservices/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- Sagely
+- sagely-cli
+- sagely-db
+- SagelyStorage
 ```
 
 **sagely-microservices/src/appStore/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-microservices/src/environment/package.json**
@@ -317,400 +251,244 @@ DEV Dependencies
 **sagely-microservices/src/familyEmail/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-microservices/src/log/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-microservices/src/lookupKey/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-microservices/src/media/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-microservices/src/readToken/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-microservices/src/resend/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-microservices/src/updateFamilyUser/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-microservices/src/validate/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-newsletter/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-cli
+- sagely-db
+- SagelyRest
+- SagelyStorage
 ```
 
 **sagely-newsletter/src/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-pubnub/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-db
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-cli
 ```
 
 **sagely-pubnub/src/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-db
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-push-notifications/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-cli
+- sagely-db
+- SagelyStorage
 ```
 
 **sagely-push-notifications/src/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-reporting/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-cli
+- sagely-db
+- SagelyRest
+- SagelyStorage
 ```
 
 **sagely-reporting/src/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-rest/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-cli
 ```
 
 **sagely-rest/src/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-scheduled-emailer/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-cli
+- sagely-db
+- SagelyStorage
 ```
 
 **sagely-scheduled-emailer/src/schedule/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-scheduled-emailer/src/send/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-sign-app/package.json**
@@ -732,81 +510,61 @@ N/A
 
 DEV Dependencies
 ```
-- N/A
+- sagely-cli
 ```
 
 **sagely-storage/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-cache
+- sagely-db
+- sagely-etc
+- sagely-cache
+- sagely-db
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-storage/src/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-cache
+- sagely-db
+- sagely-etc
+- sagely-cache
+- sagely-db
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
 
 **sagely-sync/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-cli
+- sagely-db
+- SagelyStorage
 ```
 
 **sagely-sync/src/package.json**
 Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- sagely-etc
 ```
 
 DEV Dependencies
 ```
-- Binary
-- file
-- (standard
-- input)
-- matches
+- N/A
 ```
