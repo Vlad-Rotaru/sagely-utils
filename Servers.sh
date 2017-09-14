@@ -8,8 +8,14 @@ if [ $1 ]
 		echo "Starting only those that are necessary"
 		ALL_SERVICES=false
 	fi
-fi
 
+	# check for allowed params
+	if [ $1 != "nec" ] && [ $1 != "stop" ]
+	  then
+		echo "Allowed params are: nec, stop"
+		exit 0
+	fi
+fi
 
 # Kill Sagely
 PROC=$(ps aux | grep "server.js --port 3000" | grep -v grep | awk '{print $2}')
@@ -131,6 +137,21 @@ if [ "$PROC" != "" ]
 	fi
 fi
 
+# Kill Sign Web
+PROC=$(ps aux | grep "node etc/server.js --port 7112" | grep -v grep | awk '{print $2}')
+SAGELY_SIGN_WEB=true
+if [ $PROC ]
+  then
+	if $ALL_SERVICES
+	  then
+		kill $PROC
+		echo "Closed Sign Web server"
+	else
+		echo "Sign web server already started, no need to start it again"
+		SAGELY_SIGN_WEB=false
+	fi
+fi
+
 # there is no need to continue
 if [ $1 ]
   then
@@ -141,21 +162,19 @@ if [ $1 ]
 	fi
 fi
 
-sleep 2
-
+# Start Fake SNS
+if $SAGELY_SNS
+  then
+	echo "Starting Fake SNS"
+	gnome-terminal --title="Fake SNS" --working-directory="/home/sagely/Desktop/Sagely/fake_sns" -e "./fake_sns --port 9666 --region us-west-2" --geometry 55x28+510+10 &
+	sleep 2
+fi
 
 # Start API Gateway server
 if $SAGELY_API
   then
 	echo "Starting API Gateway server"
 	gnome-terminal --title="API Gateway" --working-directory="/home/sagely/Desktop/Sagely/api-gateway-server" -e "node server.js ../sagely-calendar-print/etc/swagger.yaml ../sagely-reporting/etc/swagger.yaml ../sagely-microservices/etc/swagger.yaml ../sagely-newsletter/etc/swagger.yaml ../sagely-rest/etc/swagger.yaml ../sagely-rest/etc/publicSwagger.yaml ../sagely-client-log/etc/swagger.yaml" --geometry 55x28+10+10 &
-fi
-
-# Start Fake SNS
-if $SAGELY_SNS
-  then
-	echo "Starting Fake SNS"
-	gnome-terminal --title="Fake SNS" --working-directory="/home/sagely/Desktop/Sagely/fake_sns" -e "./fake_sns --port 9666 --region us-west-2" --geometry 55x28+510+10 &
 fi
 
 # Start Lambda
@@ -209,3 +228,14 @@ if $SAGELY
 	echo "Starting Sagely"
 	gnome-terminal --title="Sagely" --working-directory="/home/sagely/Desktop/Sagely/sagely" -e "node server.js --port 3000" --geometry 55x31+1410+500 &
 fi
+
+# Start Sign Web server
+if $SAGELY_SIGN_WEB
+  then
+	echo "Starting Sign Web server"
+	gnome-terminal --title="Sign Web" --working-directory="/home/sagely/Desktop/Sagely/sagely-sign-web" -e "node etc/server.js --port 7112" &
+fi
+
+
+sleep 1
+echo "Finished"
