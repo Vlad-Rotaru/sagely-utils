@@ -125,6 +125,28 @@ echo -e "${COMMAND_COLOR}./Servers.sh stop\e[0m";
 ./utils/Servers.sh stop
 echo ""
 
+# Git pull must be done before makind changes to files
+if [ "${GIT_PULL}" = "1" ]; then
+  for item in $PROJECT_LIST; do
+    (
+      # Changing directory to item
+      echo -e "${COMMAND_COLOR}cd ${item}\e[0m";
+      cd ${item}
+      echo ""
+
+      # If we have git repo, pull
+      if [ -d ./.git ]; then
+        echo -e "${INFO_COLOR}Pulling changes from github\e[0m";
+
+        echo -e "${COMMAND_COLOR}git pull\e[0m";
+        git pull
+        echo ""
+      fi
+    )
+  done
+fi
+
+# change packages
 echo -e "${INFO_COLOR}Replace all package.json with the local projects paths\e[0m";
 echo -e "${COMMAND_COLOR}./update-package.json.sh\e[0m";
 ./utils/update-package.json.sh
@@ -138,15 +160,6 @@ for item in $PROJECT_LIST; do
     echo -e "${COMMAND_COLOR}cd ${item}\e[0m";
     cd ${item}
     echo ""
-
-    # If we have git repo, pull
-    if [ "${GIT_PULL}" = "1" -a -d ./.git ]; then
-      echo -e "${INFO_COLOR}Pulling changes from github\e[0m";
-
-      echo -e "${COMMAND_COLOR}git pull\e[0m";
-      git pull
-      echo ""
-    fi
 
     NPM_COMMAND="npm install --no-optional"
     if [ "$item" = "sagely-calendar-print" -o "$item" = "sagely-newsletter" -o "$item" = "sagely-reporting" -o "$item" = "sagely-sign-web" ]; then
