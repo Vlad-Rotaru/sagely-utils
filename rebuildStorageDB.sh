@@ -18,7 +18,7 @@ rm -rf ./node_modules/sagely-db
 rm -rf ./build/package/node_modules/sagely-db
 
 npm install
-grunt npm_command:main
+(cd ./build/package; npm install --production)
 cd ..
 
 # Kill API Gateway server
