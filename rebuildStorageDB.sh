@@ -21,6 +21,8 @@ npm install
 (cd ./build/package; npm install --production)
 cd ..
 
+./utils/update-package.json.sh --reset
+
 # Kill API Gateway server
 PROC=$(ps aux | grep "server.js ../sagel" | grep -v grep | awk '{print $2}')
 if [ $PROC ]; then
