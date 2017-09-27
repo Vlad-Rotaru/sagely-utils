@@ -46,6 +46,10 @@ else
       sed -i 's/"sagely-cache": ".*",/"sagely-cache": "\/home\/sagely\/Desktop\/Sagely\/sagely-cache",/' $item
     fi
 
+    if grep -q '"sagely-styles": ".*"' ${item}; then
+      sed -i 's/"sagely-styles": ".*",/"sagely-cli": "\/home\/sagely\/Desktop\/Sagely\/sagely-styles",/' $item
+    fi
+
     if grep -q '"SagelyRest": ".*"' ${item}; then
       sed -i 's/"SagelyRest": ".*",/"SagelyRest": "\/home\/sagely\/Desktop\/Sagely\/sagely-rest",/' $item
     fi
