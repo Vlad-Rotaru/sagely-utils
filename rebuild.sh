@@ -263,11 +263,20 @@ if [ "${LOAD_STAGING}" = "1" ]; then
   ( cd sagely && ./etc/loadStaging.sh )
   echo ""
 
+  # Wait 5 second to be safe
+  sleep 5
+
+  # Stoping all Servers
+  ./utils/Servers.sh stop
+
   # Backup database
   if [ -f ./dynamodb-databases/test_us-west-2.db ]; then
+    # Backing up DB
     echo -e "${COMMAND_COLOR}./resetDB.sh -b sagely\e[0m";
     ./utils/resetDB.sh -b sagely
     echo ""
+
+    # Starting all Servers
     ./utils/Servers.sh nec
   fi
 fi
