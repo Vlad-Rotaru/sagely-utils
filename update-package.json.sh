@@ -47,7 +47,7 @@ else
     fi
 
     if grep -q '"sagely-styles": ".*"' ${item}; then
-      sed -i 's/"sagely-styles": ".*",/"sagely-cli": "\/home\/sagely\/Desktop\/Sagely\/sagely-styles",/' $item
+      sed -i 's/"sagely-styles": ".*",/"sagely-styles": "\/home\/sagely\/Desktop\/Sagely\/sagely-styles",/' $item
     fi
 
     if grep -q '"SagelyRest": ".*"' ${item}; then
