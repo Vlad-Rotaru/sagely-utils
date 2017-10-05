@@ -233,7 +233,7 @@ fi
 if $SAGELY_SIGN_WEB
   then
 	echo "Starting Sign Web server"
-	gnome-terminal --title="Sign Web" --working-directory="/home/sagely/Desktop/Sagely/sagely-sign-web" -e "node etc/server.js --port 7112" &
+	gnome-terminal --title="Sign Web" --working-directory="/home/sagely/Desktop/Sagely/sagely-sign-web" -e "node etc/server.js --port 7112" --geometry 55x31+510+500 &
 fi
 
 
