@@ -19,4 +19,5 @@ if [ $PROC ]; then
 	echo "Closed Lambda"
 fi
 
+cd ~/Desktop/Sagely/utils
 ./Servers.sh nec
