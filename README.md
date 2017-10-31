@@ -22,30 +22,30 @@ N/A
 
 DEV Dependencies
 ```
-- SagelyCalendarPrint
-- sagely-cli
-- sagely-db
-- sagely-etc
-- SagelyRest
+- sagely-calendar-print#cbf4900
+- sagely-cli#a671af4
+- sagely-db#afaccb2
+- sagely-etc#16dd096
+- sagely-rest#d1e1ea5
 ```
 
 **sagely-audit/package.json**
 Dependencies
 ```
-- sagely-db
-- sagely-etc
+- sagely-db#ec690d0
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
 ```
-- sagely-cli
+- sagely-cli#1cc548d
 ```
 
 **sagely-audit/src/package.json**
 Dependencies
 ```
-- sagely-db
-- sagely-etc
+- sagely-db#ec690d0
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
@@ -61,7 +61,7 @@ N/A
 
 DEV Dependencies
 ```
-- sagely-cli
+- sagely-cli#930818e
 ```
 
 **sagely-authentication/src/package.json**
@@ -78,20 +78,20 @@ N/A
 **sagely-bounced-email/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 ```
 
 DEV Dependencies
 ```
-- SagelyStorage
-- sagely-cli
-- sagely-db
+- sagely-storage#1ab80f6
+- sagely-cli#1cc548d
+- sagely-db#3a70a6a
 ```
 
 **sagely-bounced-email/src/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 ```
 
 DEV Dependencies
@@ -113,21 +113,21 @@ N/A
 **sagely-calendar-print/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 - sagely-styles
 ```
 
 DEV Dependencies
 ```
-- sagely-cli
-- sagely-db
-- SagelyStorage
+- sagely-cli#a6041c0
+- sagely-db#3a70a6a
+- sagely-storage#1ab80f6
 ```
 
 **sagely-calendar-print/src/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 ```
 
 DEV Dependencies
@@ -171,7 +171,7 @@ N/A
 **sagely-db/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
@@ -215,21 +215,21 @@ N/A
 **sagely-microservices/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 ```
 
 DEV Dependencies
 ```
-- Sagely
-- sagely-cli
-- sagely-db
-- SagelyStorage
+- sagely#d3b5d32
+- sagely-cli#1cc548d
+- sagely-db#3a70a6a
+- sagely-storage#1ab80f6
 ```
 
 **sagely-microservices/src/appStore/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 ```
 
 DEV Dependencies
@@ -241,6 +241,7 @@ N/A
 Dependencies
 ```
 - "sagely-etc":
+- +ssh:/hub.com:TeamPraxis/sagely-etc#8fdf5e4"
 ```
 
 DEV Dependencies
@@ -251,7 +252,7 @@ N/A
 **sagely-microservices/src/familyEmail/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 ```
 
 DEV Dependencies
@@ -263,6 +264,7 @@ N/A
 Dependencies
 ```
 - "sagely-etc":
+- +ssh:/hub.com:TeamPraxis/sagely-etc#8fdf5e4"
 ```
 
 DEV Dependencies
@@ -273,7 +275,7 @@ N/A
 **sagely-microservices/src/lookupKey/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 ```
 
 DEV Dependencies
@@ -285,6 +287,7 @@ N/A
 Dependencies
 ```
 - "sagely-etc":
+- +ssh:/hub.com:TeamPraxis/sagely-etc#8fdf5e4"
 ```
 
 DEV Dependencies
@@ -295,7 +298,7 @@ N/A
 **sagely-microservices/src/readToken/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 ```
 
 DEV Dependencies
@@ -306,7 +309,7 @@ N/A
 **sagely-microservices/src/resend/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 ```
 
 DEV Dependencies
@@ -317,7 +320,7 @@ N/A
 **sagely-microservices/src/updateFamilyUser/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 ```
 
 DEV Dependencies
@@ -328,7 +331,7 @@ N/A
 **sagely-microservices/src/validate/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#8fdf5e4
 ```
 
 DEV Dependencies
@@ -339,22 +342,22 @@ N/A
 **sagely-newsletter/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 - sagely-styles
 ```
 
 DEV Dependencies
 ```
-- sagely-cli
-- sagely-db
-- SagelyRest
-- SagelyStorage
+- sagely-cli#aba27a5
+- sagely-db#ec690d0
+- sagely-rest#d887df9
+- sagely-storage#f9b814c
 ```
 
 **sagely-newsletter/src/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
@@ -365,20 +368,20 @@ N/A
 **sagely-pubnub/package.json**
 Dependencies
 ```
-- sagely-db
-- sagely-etc
+- sagely-db#ec690d0
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
 ```
-- sagely-cli
+- sagely-cli#a433e04
 ```
 
 **sagely-pubnub/src/package.json**
 Dependencies
 ```
-- sagely-db
-- sagely-etc
+- sagely-db#ec690d0
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
@@ -389,20 +392,20 @@ N/A
 **sagely-push-notifications/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
 ```
-- sagely-cli
-- sagely-db
-- SagelyStorage
+- sagely-cli#1cc548d
+- sagely-db#ec690d0
+- sagely-storage#f9b814c
 ```
 
 **sagely-push-notifications/src/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
@@ -413,21 +416,21 @@ N/A
 **sagely-reporting/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
 ```
-- sagely-cli
-- sagely-db
-- SagelyRest
-- SagelyStorage
+- sagely-cli#1cc548d
+- sagely-db#ec690d0
+- sagely-rest#d887df9
+- sagely-storage#f9b814c
 ```
 
 **sagely-reporting/src/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
@@ -438,18 +441,18 @@ N/A
 **sagely-rest/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#16dd096
 ```
 
 DEV Dependencies
 ```
-- sagely-cli
+- sagely-cli#aba27a5
 ```
 
 **sagely-rest/src/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#16dd096
 ```
 
 DEV Dependencies
@@ -460,20 +463,20 @@ N/A
 **sagely-scheduled-emailer/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
 ```
-- sagely-cli
-- sagely-db
-- SagelyStorage
+- sagely-cli#1cc548d
+- sagely-db#ec690d0
+- sagely-storage#f9b814c
 ```
 
 **sagely-scheduled-emailer/src/schedule/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
@@ -484,7 +487,7 @@ N/A
 **sagely-scheduled-emailer/src/send/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
@@ -511,15 +514,15 @@ N/A
 
 DEV Dependencies
 ```
-- sagely-cli
+- sagely-cli#aba27a5
 ```
 
 **sagely-storage/package.json**
 Dependencies
 ```
 - sagely-cache
-- sagely-db
-- sagely-etc
+- sagely-db#ec690d0
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
@@ -531,8 +534,8 @@ N/A
 Dependencies
 ```
 - sagely-cache
-- sagely-db
-- sagely-etc
+- sagely-db#ec690d0
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
@@ -543,20 +546,20 @@ N/A
 **sagely-sync/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies
 ```
-- sagely-cli
-- sagely-db
-- SagelyStorage
+- sagely-cli#1cc548d
+- sagely-db#ec690d0
+- sagely-storage#f9b814c
 ```
 
 **sagely-sync/src/package.json**
 Dependencies
 ```
-- sagely-etc
+- sagely-etc#ae3ff4e
 ```
 
 DEV Dependencies

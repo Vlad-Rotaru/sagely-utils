@@ -8,10 +8,10 @@ for item in $FILES; do
   echo "**${item}**"
 	echo "Dependencies"
 	echo "\`\`\`"
-	DEPENDACIES="`grep -Ezo '"dependencies": {[^}]*}' ${item} | grep -ia '"sagely.*": ".*"' | sed -e 's/"\(sagely.*\)": ".*",/\1/ig'`"
+	DEPENDACIES="`grep -Ezo '"dependencies": {[^}]*}' ${item} | grep -ia '"sagely.*": ".*"' | sed -e 's/"sagely.*": ".*\(sagely.*\)",/\1/ig'`"
 
   if [ "${DEPENDACIES}" ]; then
-      echo ${DEPENDACIES} | sed -e 's/ /\n/g' | sed -e 's/^/- /g'
+      echo ${DEPENDACIES} | sed -e 's/ /\n/g' | sed -e 's/.git//g' | sed -e 's/^/- /g'
   else
 	  echo "N/A"
 	fi
@@ -20,9 +20,9 @@ for item in $FILES; do
 
 	echo "DEV Dependencies"
 	echo "\`\`\`"
-	DEV_DEPENDACIES="`grep -Ezo '"devDependencies": {[^}]*}' ${item} | grep -ia '"sagely.*": ".*"' | sed -e 's/"\(sagely.*\)": ".*",/\1/ig'`"
+	DEV_DEPENDACIES="`grep -Ezo '"devDependencies": {[^}]*}' ${item} | grep -ia '"sagely.*": ".*"' | sed -e 's/"sagely.*": ".*\(sagely.*\)",/\1/ig'`"
 	if [ "${DEV_DEPENDACIES}" ]; then
-      echo ${DEV_DEPENDACIES} | sed -e 's/ /\n/g' | sed -e 's/^/- /g'
+      echo ${DEV_DEPENDACIES} | sed -e 's/ /\n/g'| sed -e 's/.git//g'  | sed -e 's/^/- /g'
   else
 	  echo "N/A"
 	fi
