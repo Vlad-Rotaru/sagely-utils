@@ -23,43 +23,43 @@ else
   for item in $FILES; do
     echo -e "\e[31mReplacing ${item}\e[0m"
     if grep -q '"sagely": ".*"' ${item}; then
-      sed -i 's/"sagely": ".*",/"sagely": "\/home\/sagely\/Desktop\/Sagely\/sagely",/' $item
+      sed -i 's/"sagely": ".*"/"sagely": "\/home\/sagely\/Desktop\/Sagely\/sagely"/' $item
     fi
 
     if grep -q '"Sagely": ".*"' ${item}; then
-      sed -i 's/"Sagely": ".*",/"Sagely": "\/home\/sagely\/Desktop\/Sagely\/sagely",/' $item
+      sed -i 's/"Sagely": ".*"/"Sagely": "\/home\/sagely\/Desktop\/Sagely\/sagely"/' $item
     fi
 
     if grep -q '"sagely-etc": ".*"' ${item}; then
-      sed -i 's/"sagely-etc": ".*",/"sagely-etc": "\/home\/sagely\/Desktop\/Sagely\/sagely-etc",/' $item
+      sed -i 's/"sagely-etc": ".*"/"sagely-etc": "\/home\/sagely\/Desktop\/Sagely\/sagely-etc"/' $item
     fi
 
     if grep -q '"sagely-db": ".*"' ${item}; then
-      sed -i 's/"sagely-db": ".*",/"sagely-db": "\/home\/sagely\/Desktop\/Sagely\/sagely-db",/' $item
+      sed -i 's/"sagely-db": ".*"/"sagely-db": "\/home\/sagely\/Desktop\/Sagely\/sagely-db"/' $item
     fi
 
     if grep -q '"sagely-cli": ".*"' ${item}; then
-      sed -i 's/"sagely-cli": ".*",/"sagely-cli": "\/home\/sagely\/Desktop\/Sagely\/sagely-cli",/' $item
+      sed -i 's/"sagely-cli": ".*"/"sagely-cli": "\/home\/sagely\/Desktop\/Sagely\/sagely-cli"/' $item
     fi
 
     if grep -q '"sagely-cache": ".*"' ${item}; then
-      sed -i 's/"sagely-cache": ".*",/"sagely-cache": "\/home\/sagely\/Desktop\/Sagely\/sagely-cache",/' $item
+      sed -i 's/"sagely-cache": ".*"/"sagely-cache": "\/home\/sagely\/Desktop\/Sagely\/sagely-cache"/' $item
     fi
 
     if grep -q '"sagely-styles": ".*"' ${item}; then
-      sed -i 's/"sagely-styles": ".*",/"sagely-styles": "\/home\/sagely\/Desktop\/Sagely\/sagely-styles",/' $item
+      sed -i 's/"sagely-styles": ".*"/"sagely-styles": "\/home\/sagely\/Desktop\/Sagely\/sagely-styles"/' $item
     fi
 
     if grep -q '"SagelyRest": ".*"' ${item}; then
-      sed -i 's/"SagelyRest": ".*",/"SagelyRest": "\/home\/sagely\/Desktop\/Sagely\/sagely-rest",/' $item
+      sed -i 's/"SagelyRest": ".*"/"SagelyRest": "\/home\/sagely\/Desktop\/Sagely\/sagely-rest"/' $item
     fi
 
     if grep -q '"SagelyStorage": ".*"' ${item}; then
-      sed -i 's/"SagelyStorage": ".*",/"SagelyStorage": "\/home\/sagely\/Desktop\/Sagely\/sagely-storage",/' $item
+      sed -i 's/"SagelyStorage": ".*"/"SagelyStorage": "\/home\/sagely\/Desktop\/Sagely\/sagely-storage"/' $item
     fi
 
     if grep -q '"SagelyCalendarPrint": ".*"' ${item}; then
-      sed -i 's/"SagelyCalendarPrint": ".*",/"SagelyCalendarPrint": "\/home\/sagely\/Desktop\/Sagely\/sagely-calendar-print",/' $item
+      sed -i 's/"SagelyCalendarPrint": ".*"/"SagelyCalendarPrint": "\/home\/sagely\/Desktop\/Sagely\/sagely-calendar-print"/' $item
     fi
   done
 fi
