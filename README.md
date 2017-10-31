@@ -102,7 +102,7 @@ N/A
 **sagely-cache/package.json**
 Dependencies
 ```
-- sagely-etc
+N/A
 ```
 
 DEV Dependencies
@@ -114,6 +114,7 @@ N/A
 Dependencies
 ```
 - sagely-etc
+- sagely-styles
 ```
 
 DEV Dependencies
@@ -171,7 +172,6 @@ N/A
 Dependencies
 ```
 - sagely-etc
-- sagely-etc
 ```
 
 DEV Dependencies
@@ -198,7 +198,7 @@ N/A
 
 DEV Dependencies
 ```
-- sagely-cli
+N/A
 ```
 
 **sagely-log/src/package.json**
@@ -240,7 +240,7 @@ N/A
 **sagely-microservices/src/environment/package.json**
 Dependencies
 ```
-N/A
+- "sagely-etc":
 ```
 
 DEV Dependencies
@@ -262,7 +262,7 @@ N/A
 **sagely-microservices/src/log/package.json**
 Dependencies
 ```
-- sagely-etc
+- "sagely-etc":
 ```
 
 DEV Dependencies
@@ -284,7 +284,7 @@ N/A
 **sagely-microservices/src/media/package.json**
 Dependencies
 ```
-- sagely-etc
+- "sagely-etc":
 ```
 
 DEV Dependencies
@@ -340,6 +340,7 @@ N/A
 Dependencies
 ```
 - sagely-etc
+- sagely-styles
 ```
 
 DEV Dependencies
@@ -519,9 +520,6 @@ Dependencies
 - sagely-cache
 - sagely-db
 - sagely-etc
-- sagely-cache
-- sagely-db
-- sagely-etc
 ```
 
 DEV Dependencies
@@ -532,9 +530,6 @@ N/A
 **sagely-storage/src/package.json**
 Dependencies
 ```
-- sagely-cache
-- sagely-db
-- sagely-etc
 - sagely-cache
 - sagely-db
 - sagely-etc
