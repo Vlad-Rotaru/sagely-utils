@@ -152,6 +152,21 @@ if [ $PROC ]
 	fi
 fi
 
+# Kill Fake SQS
+PROC=$(ps aux | grep "fake_sqs --port 9445" | grep -v grep | awk '{print $2}')
+SAGELY_FAKE_SQS=true
+if [ $PROC ]
+  then
+	if $ALL_SERVICES
+	  then
+		kill $PROC
+		echo "Closed Fake SQS server"
+	else
+		echo "Fake SQS already started, no need to start it again"
+		SAGELY_FAKE_SQS=false
+	fi
+fi
+
 # there is no need to continue
 if [ $1 ]
   then
@@ -236,6 +251,12 @@ if $SAGELY_SIGN_WEB
 	gnome-terminal --title="Sign Web" --working-directory="/home/sagely/Desktop/Sagely/sagely-sign-web" -e "node etc/server.js --port 7112" --geometry 55x31+510+500 &
 fi
 
+# Start Fake SQS
+if $SAGELY_FAKE_SQS
+  then
+	echo "Starting Fake SQS"
+	gnome-terminal --title="Fake SQS" --working-directory="/home/sagely/Desktop/Sagely/fake_sqs" -e "fake_sqs --port 9445" &
+fi
 
 sleep 1
 echo "Finished"
