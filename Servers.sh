@@ -189,7 +189,7 @@ fi
 if $SAGELY_API
   then
 	echo "Starting API Gateway server"
-	gnome-terminal --title="API Gateway" --working-directory="/home/sagely/Desktop/Sagely/api-gateway-server" -e "node server.js ../sagely-calendar-print/etc/swagger.yaml ../sagely-reporting/etc/swagger.yaml ../sagely-microservices/etc/swagger.yaml ../sagely-newsletter/etc/swagger.yaml ../sagely-rest/etc/swagger.yaml ../sagely-rest/etc/publicSwagger.yaml ../sagely-rest/etc/validateSwagger.yaml ../sagely-client-log/etc/swagger.yaml" --geometry 55x28+10+10 &
+	gnome-terminal --title="API Gateway" --working-directory="/home/sagely/Desktop/Sagely/api-gateway-server" -e "node server.js ../sagely-calendar-print/etc/swagger.yaml ../sagely-reporting/etc/swagger.yaml ../sagely-microservices/etc/swagger.yaml ../sagely-newsletter/etc/swagger.yaml ../sagely-rest/etc/swagger.yaml ../sagely-rest/etc/publicSwagger.yaml ../sagely-rest/etc/validateSwagger.yaml ../sagely-client-log/etc/swagger.yaml ../sagely-communications/etc/swagger.yaml" --geometry 55x28+10+10 &
 fi
 
 # Start Lambda
